@@ -1,0 +1,889 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YT1TW87JTJ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-YT1TW87JTJ');
+</script>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Floorline AI — Built for the Floor. Powered by AI.</title>
+
+<!-- SEO Meta -->
+<meta name="description" content="Custom AI-powered training platforms & workflow automation tools for restaurants, retail & franchise brands. Built fast, no monthly fees. Phoenix, AZ.">
+<meta name="keywords" content="AI training platform, workflow automation, staff training software, restaurant training, franchise operations, Phoenix AZ">
+<meta name="author" content="Michael Smith, Floorline AI LLC">
+<link rel="canonical" href="https://floorlineai.com/">
+
+<!-- Favicon -->
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' fill='%23060606'/><text x='6' y='24' font-family='Arial Black' font-size='22' font-weight='900' fill='%2300C882'>F</text></svg>">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://floorlineai.com/">
+<meta property="og:title" content="Floorline AI — Built for the Floor. Powered by AI.">
+<meta property="og:description" content="Custom AI-powered training platforms and workflow automation for restaurants, retail, franchise, and people-driven businesses. Built fast. No monthly fees.">
+<meta property="og:image" content="https://floorlineai.com/og-image.png">
+<meta property="og:site_name" content="Floorline AI">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Floorline AI — Built for the Floor. Powered by AI.">
+<meta name="twitter:description" content="Custom AI-powered training platforms and workflow automation for restaurants, retail, and franchise brands.">
+
+<!-- LocalBusiness Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Floorline AI LLC",
+  "description": "Custom AI-powered training platforms, workflow automation tools, and operations systems for restaurants, retail, franchise, and people-driven businesses.",
+  "url": "https://floorlineai.com",
+  "telephone": "480-388-1877",
+  "email": "Floorlineai@gmail.com",
+  "founder": { "@type": "Person", "name": "Michael Smith" },
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Phoenix",
+    "addressRegion": "AZ",
+    "addressCountry": "US"
+  },
+  "areaServed": ["Phoenix", "Mesa", "Scottsdale", "Gilbert", "Chandler", "Tempe", "East Valley", "Arizona"],
+  "priceRange": "$$",
+  "knowsAbout": ["AI Training Platforms", "Workflow Automation", "Staff Training Software", "Restaurant Operations", "Franchise Systems"]
+}
+</script>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root {
+  --green: #00C882;
+  --green-glow: rgba(0,200,130,0.15);
+  --green-mid: rgba(0,200,130,0.4);
+  --bg: #060606;
+  --bg2: #0d0d0d;
+  --bg3: #111;
+  --white: #F2F0EB;
+  --grey: #888;
+  --dim: #2a2a2a;
+  --serif: 'Cormorant Garamond', Georgia, serif;
+  --sans: 'DM Sans', sans-serif;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--white);font-family:var(--sans);font-weight:300;line-height:1.7;overflow-x:hidden;cursor:none}
+
+/* CUSTOM CURSOR */
+.cursor{position:fixed;width:8px;height:8px;background:var(--green);border-radius:50%;pointer-events:none;z-index:9999;transition:transform 0.15s ease;transform:translate(-50%,-50%)}
+.cursor-ring{position:fixed;width:32px;height:32px;border:1px solid var(--green-mid);border-radius:50%;pointer-events:none;z-index:9998;transition:transform 0.08s ease, width 0.3s, height 0.3s, opacity 0.3s;transform:translate(-50%,-50%);opacity:0.6}
+.cursor-ring.expand{width:56px;height:56px;opacity:0.3}
+
+/* NAV */
+nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;justify-content:space-between;align-items:center;padding:22px 60px;background:rgba(6,6,6,0.9);backdrop-filter:blur(16px);border-bottom:1px solid var(--dim);transition:padding 0.3s}
+nav.scrolled{padding:14px 60px}
+.nav-logo{font-family:var(--sans);font-size:14px;font-weight:500;letter-spacing:3px;text-transform:uppercase;color:var(--white);text-decoration:none}
+.nav-logo span{color:var(--green)}
+.nav-links{display:flex;gap:36px;list-style:none;align-items:center}
+.nav-links a{color:var(--grey);text-decoration:none;font-size:12px;letter-spacing:1.5px;text-transform:uppercase;transition:color 0.3s}
+.nav-links a:hover{color:var(--white)}
+.nav-cta{background:transparent;border:1px solid var(--green);color:var(--green)!important;padding:8px 20px;font-size:11px!important;letter-spacing:2px!important;cursor:none;transition:background 0.3s,color 0.3s!important}
+.nav-cta:hover{background:var(--green)!important;color:var(--bg)!important}
+
+/* PARTICLE CANVAS */
+#particle-canvas{position:fixed;top:0;left:0;width:100%;height:100%;pointer-events:none;z-index:0;opacity:0.4}
+
+/* HERO */
+#hero{min-height:100vh;display:flex;flex-direction:column;justify-content:center;padding:140px 60px 80px;position:relative;overflow:hidden;z-index:1}
+.hero-glow{position:absolute;width:600px;height:600px;background:radial-gradient(circle,rgba(0,200,130,0.07) 0%,transparent 70%);top:0;right:-100px;pointer-events:none;animation:pulse 4s ease-in-out infinite}
+@keyframes pulse{0%,100%{opacity:0.5;transform:scale(1)}50%{opacity:1;transform:scale(1.1)}}
+.hero-eyebrow{font-size:11px;letter-spacing:4px;text-transform:uppercase;color:var(--green);margin-bottom:28px;opacity:0;animation:fadeUp 0.8s ease forwards 0.2s}
+.hero-title{font-family:var(--serif);font-size:clamp(52px,7.5vw,108px);font-weight:300;line-height:1.05;letter-spacing:-1px;max-width:860px;opacity:0;animation:fadeUp 0.8s ease forwards 0.4s}
+.hero-title em{font-style:italic;color:var(--green)}
+.type-wrap{display:inline-block;min-width:320px}
+.type-cursor{display:inline-block;width:3px;height:0.85em;background:var(--green);margin-left:4px;vertical-align:middle;animation:blink 1s step-end infinite}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:0}}
+.hero-sub{font-size:17px;color:var(--grey);max-width:520px;margin-top:28px;line-height:1.9;opacity:0;animation:fadeUp 0.8s ease forwards 0.6s}
+.hero-actions{display:flex;gap:20px;margin-top:44px;opacity:0;animation:fadeUp 0.8s ease forwards 0.8s;flex-wrap:wrap}
+.btn-primary{background:var(--green);color:var(--bg);border:none;padding:16px 36px;font-family:var(--sans);font-size:12px;letter-spacing:2px;text-transform:uppercase;cursor:none;text-decoration:none;display:inline-block;transition:opacity 0.3s,transform 0.3s}
+.btn-primary:hover{opacity:0.85;transform:translateY(-2px)}
+.btn-ghost{background:transparent;color:var(--white);border:1px solid var(--dim);padding:16px 36px;font-family:var(--sans);font-size:12px;letter-spacing:2px;text-transform:uppercase;cursor:none;text-decoration:none;display:inline-block;transition:border-color 0.3s}
+.btn-ghost:hover{border-color:var(--grey)}
+
+/* INDUSTRY SWITCHER */
+.industry-switcher{display:flex;gap:12px;margin-top:36px;flex-wrap:wrap;opacity:0;animation:fadeUp 0.8s ease forwards 1s}
+.ind-btn{background:var(--bg3);border:1px solid var(--dim);color:var(--grey);padding:8px 20px;font-size:12px;letter-spacing:1px;text-transform:uppercase;cursor:none;transition:all 0.3s;font-family:var(--sans)}
+.ind-btn.active,.ind-btn:hover{border-color:var(--green);color:var(--green);background:var(--green-glow)}
+
+/* STATS */
+.hero-stats{display:flex;gap:56px;margin-top:72px;padding-top:44px;border-top:1px solid var(--dim);flex-wrap:wrap;opacity:0;animation:fadeUp 0.8s ease forwards 1.1s}
+.stat-num{font-family:var(--serif);font-size:44px;font-weight:300;color:var(--green);line-height:1}
+.stat-label{font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:var(--grey);margin-top:6px}
+
+/* TECH BADGE STRIP */
+#tech-strip{background:var(--bg2);border-top:1px solid var(--dim);border-bottom:1px solid var(--dim);padding:20px 0;overflow:hidden;position:relative;z-index:1}
+.strip-track{display:flex;gap:60px;animation:stripScroll 20s linear infinite;white-space:nowrap}
+.strip-track:hover{animation-play-state:paused}
+.badge{font-size:11px;letter-spacing:3px;text-transform:uppercase;color:var(--grey);display:flex;align-items:center;gap:10px;flex-shrink:0}
+.badge-dot{width:5px;height:5px;background:var(--green);border-radius:50%;flex-shrink:0}
+@keyframes stripScroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+/* SECTION BASE */
+section{padding:120px 60px;border-bottom:1px solid var(--dim);position:relative;z-index:1}
+.section-eyebrow{font-size:11px;letter-spacing:4px;text-transform:uppercase;color:var(--green);margin-bottom:20px}
+.section-title{font-family:var(--serif);font-size:clamp(34px,4vw,56px);font-weight:300;line-height:1.1;max-width:640px}
+.section-title em{font-style:italic;color:var(--green)}
+.section-body{font-size:16px;color:var(--grey);max-width:560px;margin-top:20px;line-height:1.9}
+
+/* WHAT WE BUILD */
+#what{background:var(--bg2)}
+.what-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;margin-top:60px}
+.what-card{background:var(--bg3);padding:44px 36px;position:relative;overflow:hidden;transition:background 0.3s}
+.what-card:hover{background:#161616}
+.what-card::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:var(--green);transform:scaleX(0);transform-origin:left;transition:transform 0.4s ease}
+.what-card:hover::before{transform:scaleX(1)}
+.card-num{font-family:var(--serif);font-size:44px;font-weight:300;color:var(--dim);line-height:1;margin-bottom:20px}
+.card-title{font-size:17px;font-weight:500;margin-bottom:14px}
+.card-body{font-size:14px;color:var(--grey);line-height:1.8}
+.card-tag{display:inline-block;margin-top:20px;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--green)}
+
+/* AI DEMO */
+#demo{background:var(--bg)}
+.demo-container{display:grid;grid-template-columns:1fr 1fr;gap:60px;margin-top:60px;align-items:start}
+.demo-left{}
+.demo-window{background:var(--bg3);border:1px solid var(--dim);border-radius:4px;overflow:hidden}
+.demo-titlebar{background:var(--bg2);padding:12px 20px;display:flex;align-items:center;gap:8px;border-bottom:1px solid var(--dim)}
+.demo-dot{width:10px;height:10px;border-radius:50%}
+.demo-title-text{font-size:12px;letter-spacing:2px;color:var(--grey);text-transform:uppercase;margin-left:8px}
+.demo-messages{padding:24px;min-height:320px;max-height:420px;overflow-y:auto;display:flex;flex-direction:column;gap:16px}
+.msg{max-width:85%;padding:14px 18px;font-size:14px;line-height:1.7;border-radius:2px}
+.msg-user{background:var(--green-glow);border:1px solid var(--green-mid);color:var(--white);align-self:flex-end}
+.msg-ai{background:var(--bg2);border:1px solid var(--dim);color:var(--grey);align-self:flex-start}
+.msg-ai strong{color:var(--white)}
+.demo-input-row{display:flex;gap:0;border-top:1px solid var(--dim)}
+.demo-input{flex:1;background:transparent;border:none;padding:16px 20px;color:var(--white);font-family:var(--sans);font-size:14px;outline:none}
+.demo-input::placeholder{color:var(--dim)}
+.demo-send{background:var(--green);border:none;padding:16px 24px;color:var(--bg);font-size:12px;letter-spacing:2px;text-transform:uppercase;cursor:none;font-family:var(--sans);transition:opacity 0.3s}
+.demo-send:hover{opacity:0.85}
+.demo-send:disabled{opacity:0.4;cursor:not-allowed}
+.demo-suggestions{display:flex;flex-direction:column;gap:10px}
+.demo-suggestion{background:var(--bg3);border:1px solid var(--dim);padding:14px 18px;font-size:13px;color:var(--grey);cursor:none;transition:all 0.3s;text-align:left;font-family:var(--sans)}
+.demo-suggestion:hover{border-color:var(--green);color:var(--white);background:var(--green-glow)}
+.demo-suggestion-label{font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--green);margin-bottom:12px}
+.typing-indicator{display:flex;gap:5px;align-items:center;padding:14px 18px}
+.typing-dot{width:6px;height:6px;background:var(--grey);border-radius:50%;animation:typingBounce 1.2s ease infinite}
+.typing-dot:nth-child(2){animation-delay:0.2s}
+.typing-dot:nth-child(3){animation-delay:0.4s}
+@keyframes typingBounce{0%,60%,100%{transform:translateY(0)}30%{transform:translateY(-6px)}}
+
+/* HOW IT WORKS */
+#how{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:start}
+.how-steps{margin-top:48px}
+.step{display:flex;gap:28px;padding:28px 0;border-bottom:1px solid var(--dim)}
+.step:first-child{border-top:1px solid var(--dim)}
+.step-num{font-family:var(--serif);font-size:30px;font-weight:300;color:var(--green);min-width:36px;line-height:1}
+.step-title{font-size:16px;font-weight:500;margin-bottom:6px}
+.step-body{font-size:14px;color:var(--grey);line-height:1.8}
+.platform-item{display:flex;align-items:center;gap:16px;padding:16px 0;border-bottom:1px solid var(--dim);font-size:14px;color:var(--grey)}
+.platform-dot{width:6px;height:6px;background:var(--green);border-radius:50%;flex-shrink:0}
+.platform-name{color:var(--white);font-weight:500;font-size:14px}
+
+/* CASE STUDY */
+#case{background:var(--bg2)}
+.case-inner{display:grid;grid-template-columns:1fr 1fr;gap:80px;margin-top:60px;align-items:start}
+.case-label{display:inline-block;border:1px solid var(--green);color:var(--green);font-size:11px;letter-spacing:2px;text-transform:uppercase;padding:6px 14px;margin-bottom:28px}
+.case-title{font-family:var(--serif);font-size:36px;font-weight:300;line-height:1.2;margin-bottom:20px}
+.case-body{font-size:15px;color:var(--grey);line-height:1.9;margin-bottom:18px}
+.case-metrics{display:grid;grid-template-columns:1fr 1fr;gap:2px}
+.metric{background:var(--bg3);padding:28px 24px}
+.metric-val{font-family:var(--serif);font-size:36px;font-weight:300;color:var(--green);line-height:1}
+.metric-desc{font-size:11px;letter-spacing:1px;text-transform:uppercase;color:var(--grey);margin-top:6px}
+
+/* TESTIMONIAL */
+#testimonials{background:var(--bg3)}
+.testimonial-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;margin-top:60px}
+.testimonial-card{background:var(--bg2);padding:40px 32px;border-top:2px solid transparent;transition:border-color 0.3s}
+.testimonial-card:hover{border-color:var(--green)}
+.t-quote{font-family:var(--serif);font-size:20px;font-weight:300;font-style:italic;line-height:1.6;color:var(--white);margin-bottom:24px}
+.t-name{font-size:13px;font-weight:500;color:var(--white)}
+.t-role{font-size:12px;color:var(--grey);margin-top:4px;letter-spacing:0.5px}
+.t-stars{color:var(--green);font-size:14px;margin-bottom:16px;letter-spacing:2px}
+
+/* INDUSTRIES */
+#industries{}
+.industry-tabs{display:flex;gap:2px;margin-top:48px;flex-wrap:wrap}
+.ind-tab{background:var(--bg3);border:none;padding:14px 28px;font-size:12px;letter-spacing:1.5px;text-transform:uppercase;color:var(--grey);cursor:none;font-family:var(--sans);transition:all 0.3s}
+.ind-tab.active,.ind-tab:hover{background:var(--green-glow);color:var(--green)}
+.industry-content{display:grid;grid-template-columns:1fr 1fr;gap:60px;margin-top:2px;padding:48px;background:var(--bg3)}
+.industry-content h3{font-family:var(--serif);font-size:36px;font-weight:300;margin-bottom:16px}
+.industry-content p{font-size:15px;color:var(--grey);line-height:1.9;margin-bottom:20px}
+.industry-features{display:flex;flex-direction:column;gap:12px;margin-top:8px}
+.ind-feature{display:flex;align-items:center;gap:14px;font-size:14px;color:var(--grey)}
+.ind-feature::before{content:'';width:6px;height:6px;background:var(--green);border-radius:50%;flex-shrink:0}
+.industry-visual{background:var(--bg2);padding:32px;border-left:2px solid var(--green)}
+.ind-stat-grid{display:grid;grid-template-columns:1fr 1fr;gap:2px}
+.ind-stat{background:var(--bg3);padding:24px 20px}
+.ind-stat-val{font-family:var(--serif);font-size:32px;color:var(--green)}
+.ind-stat-label{font-size:11px;letter-spacing:1px;text-transform:uppercase;color:var(--grey);margin-top:4px}
+
+/* CTA */
+#contact{background:var(--bg2);text-align:center;padding:140px 60px}
+.contact-line{width:1px;height:80px;background:linear-gradient(to bottom,transparent,var(--green));margin:0 auto 48px}
+#contact .section-title{margin:0 auto;text-align:center;max-width:700px}
+#contact .section-body{margin:20px auto 0;text-align:center}
+.calendly-hint{font-size:13px;color:var(--grey);margin-top:16px}
+.calendly-hint a{color:var(--green);text-decoration:none}
+
+/* FOOTER */
+footer{padding:40px 60px;display:flex;justify-content:space-between;align-items:center;border-top:1px solid var(--dim);position:relative;z-index:1}
+.footer-logo{font-size:13px;letter-spacing:3px;text-transform:uppercase;color:var(--grey)}
+.footer-logo span{color:var(--green)}
+.footer-copy{font-size:12px;color:var(--dim);letter-spacing:1px}
+.footer-tagline{font-family:var(--serif);font-style:italic;font-size:14px;color:var(--grey)}
+
+/* SCROLL REVEAL */
+@keyframes fadeUp{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:translateY(0)}}
+.fade-in{opacity:0;transform:translateY(22px);transition:opacity 0.7s ease,transform 0.7s ease}
+.fade-in.visible{opacity:1;transform:translateY(0)}
+
+/* COUNTER */
+.count-up{font-family:var(--serif);font-size:44px;font-weight:300;color:var(--green);line-height:1}
+
+@media(max-width:900px){
+  nav{padding:18px 24px}
+  .nav-links{display:none}
+  section,#hero{padding:80px 24px}
+  .what-grid,.case-inner,#how,.testimonial-grid,.industry-content{grid-template-columns:1fr}
+  .demo-container{grid-template-columns:1fr}
+  footer{flex-direction:column;gap:16px;text-align:center}
+  .hero-stats{gap:28px}
+}
+</style>
+</head>
+<body>
+
+<!-- CURSOR -->
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<!-- PARTICLE CANVAS -->
+<canvas id="particle-canvas"></canvas>
+
+<!-- NAV -->
+<nav id="mainNav">
+  <a href="#hero" class="nav-logo">Floorline <span>AI</span></a>
+  <ul class="nav-links">
+    <li><a href="#what">What We Build</a></li>
+    <li><a href="#demo">Live Demo</a></li>
+    <li><a href="#how">How It Works</a></li>
+    <li><a href="#case">Case Study</a></li>
+    <li><a href="#industries">Industries</a></li>
+    <li><a href="#contact" class="nav-cta">Get Started</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-glow"></div>
+  <p class="hero-eyebrow">Training & Workflow Intelligence</p>
+  <h1 class="hero-title">
+    Built for <span class="type-wrap" id="typeTarget">restaurants</span><span class="type-cursor"></span><br>
+    <em>Powered by AI.</em>
+  </h1>
+  <p class="hero-sub" id="hero-sub-text">Custom AI-powered training and workflow platforms for restaurants — your team, your brand, your floor.</p>
+  <div class="industry-switcher">
+    <button class="ind-btn active" data-industry="restaurants" data-sub="Custom AI-powered training and workflow platforms for restaurants — your team, your brand, your floor.">Restaurants</button>
+    <button class="ind-btn" data-industry="retail" data-sub="Product knowledge, onboarding, and customer service platforms built specifically for retail teams at scale.">Retail</button>
+    <button class="ind-btn" data-industry="franchises" data-sub="Consistent training and operations deployed identically across every location in your franchise network.">Franchises</button>
+    <button class="ind-btn" data-industry="any business" data-sub="If you have a team to train and a business to run — Floorline AI builds the system that makes both work better.">Any Business</button>
+  </div>
+  <div class="hero-actions">
+    <a href="#demo" class="btn-primary">Try the AI Demo</a>
+    <a href="#contact" class="btn-ghost">Start a Project</a>
+  </div>
+  <div class="hero-image-wrap" style="margin-top:56px;max-width:680px;opacity:0;animation:fadeUp 0.8s ease forwards 1.2s">
+    <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2MDAgNDAwIiB3aWR0aD0iNjAwIiBoZWlnaHQ9IjQwMCI+CiAgPHJlY3Qgd2lkdGg9IjYwMCIgaGVpZ2h0PSI0MDAiIGZpbGw9IiMwZDBkMGQiIHJ4PSIxMiIvPgogIDwhLS0gdGl0bGUgYmFyIC0tPgogIDxyZWN0IHg9IjIwIiB5PSIyMCIgd2lkdGg9IjU2MCIgaGVpZ2h0PSI0NCIgZmlsbD0iIzE0MTQxNCIgcng9IjgiLz4KICA8Y2lyY2xlIGN4PSI0NCIgY3k9IjQyIiByPSI2IiBmaWxsPSIjZmY1ZjU3Ii8+CiAgPGNpcmNsZSBjeD0iNjYiIGN5PSI0MiIgcj0iNiIgZmlsbD0iI2ZlYmMyZSIvPgogIDxjaXJjbGUgY3g9Ijg4IiBjeT0iNDIiIHI9IjYiIGZpbGw9IiMyOGM4NDAiLz4KICA8dGV4dCB4PSIzMDAiIHk9IjQ3IiBmaWxsPSIjOTk5IiBmb250LWZhbWlseT0ibW9ub3NwYWNlIiBmb250LXNpemU9IjEzIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5GbG9vcmxpbmUgQUkg4oCUIFRyYWluaW5nIFBsYXRmb3JtPC90ZXh0PgoKICA8IS0tIGxlZnQgc2lkZWJhciAtLT4KICA8cmVjdCB4PSIyMCIgeT0iODAiIHdpZHRoPSIxNTAiIGhlaWdodD0iMzAwIiBmaWxsPSIjMTQxNDE0IiByeD0iOCIvPgogIDxyZWN0IHg9IjM2IiB5PSIxMDAiIHdpZHRoPSIxMTgiIGhlaWdodD0iMzQiIGZpbGw9IiMwMEM4ODIiIHJ4PSI2IiBvcGFjaXR5PSIwLjE1Ii8+CiAgPGNpcmNsZSBjeD0iNTIiIGN5PSIxMTciIHI9IjUiIGZpbGw9IiMwMEM4ODIiLz4KICA8dGV4dCB4PSI2OCIgeT0iMTIxIiBmaWxsPSIjMDBDODgyIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgZm9udC13ZWlnaHQ9ImJvbGQiPkRhc2hib2FyZDwvdGV4dD4KICA8Y2lyY2xlIGN4PSI1MiIgY3k9IjE1OCIgcj0iNSIgZmlsbD0iIzNhM2EzYSIvPgogIDx0ZXh0IHg9IjY4IiB5PSIxNjIiIGZpbGw9IiM4ODgiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyIj5UcmFpbmluZzwvdGV4dD4KICA8Y2lyY2xlIGN4PSI1MiIgY3k9IjE4OCIgcj0iNSIgZmlsbD0iIzNhM2EzYSIvPgogIDx0ZXh0IHg9IjY4IiB5PSIxOTIiIGZpbGw9IiM4ODgiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyIj5PbmJvYXJkaW5nPC90ZXh0PgogIDxjaXJjbGUgY3g9IjUyIiBjeT0iMjE4IiByPSI1IiBmaWxsPSIjM2EzYTNhIi8+CiAgPHRleHQgeD0iNjgiIHk9IjIyMiIgZmlsbD0iIzg4OCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTIiPk1hbmFnZXI8L3RleHQ+CiAgPGNpcmNsZSBjeD0iNTIiIGN5PSIyNDgiIHI9IjUiIGZpbGw9IiMzYTNhM2EiLz4KICA8dGV4dCB4PSI2OCIgeT0iMjUyIiBmaWxsPSIjODg4IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiI+QWxsZXJnZW5zPC90ZXh0PgogIDxjaXJjbGUgY3g9IjUyIiBjeT0iMjc4IiByPSI1IiBmaWxsPSIjM2EzYTNhIi8+CiAgPHRleHQgeD0iNjgiIHk9IjI4MiIgZmlsbD0iIzg4OCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTIiPlJlcG9ydHM8L3RleHQ+CiAgPCEtLSBzaWRlYmFyIGZvb3RlciAtLT4KICA8bGluZSB4MT0iMzYiIHkxPSIzMzAiIHgyPSIxNTQiIHkyPSIzMzAiIHN0cm9rZT0iIzJhMmEyYSIgc3Ryb2tlLXdpZHRoPSIxIi8+CiAgPGNpcmNsZSBjeD0iNTIiIGN5PSIzNTQiIHI9IjkiIGZpbGw9IiMwMEM4ODIiIG9wYWNpdHk9IjAuMjUiLz4KICA8dGV4dCB4PSI1MiIgeT0iMzU4IiBmaWxsPSIjMDBDODgyIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMCIgZm9udC13ZWlnaHQ9ImJvbGQiIHRleHQtYW5jaG9yPSJtaWRkbGUiPk1TPC90ZXh0PgogIDx0ZXh0IHg9IjcwIiB5PSIzNTIiIGZpbGw9IiNjY2MiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjExIiBmb250LXdlaWdodD0iYm9sZCI+TWljaGFlbCBTLjwvdGV4dD4KICA8dGV4dCB4PSI3MCIgeT0iMzY1IiBmaWxsPSIjNjY2IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSI5Ij5BZG1pbjwvdGV4dD4KCiAgPCEtLSBtYWluIHBhbmVsOiBtb2R1bGUgY2FyZHMgLS0+CiAgPHJlY3QgeD0iMTkwIiB5PSI4MCIgd2lkdGg9IjM5MCIgaGVpZ2h0PSIxNTAiIGZpbGw9IiMxNDE0MTQiIHJ4PSI4Ii8+CiAgPHRleHQgeD0iMjEwIiB5PSIxMDgiIGZpbGw9IiMwMEM4ODIiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEzIiBmb250LXdlaWdodD0iYm9sZCI+QWN0aXZlIFRyYWluaW5nIE1vZHVsZXM8L3RleHQ+CgogIDwhLS0gbW9kdWxlIGNhcmQgMSAtLT4KICA8cmVjdCB4PSIyMTAiIHk9IjEyMiIgd2lkdGg9IjE3MCIgaGVpZ2h0PSI5MiIgZmlsbD0iIzBkMGQwZCIgcng9IjYiIHN0cm9rZT0iIzJhMmEyYSIvPgogIDxjaXJjbGUgY3g9IjI0MCIgY3k9IjE1NSIgcj0iMTYiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzJhMmEyYSIgc3Ryb2tlLXdpZHRoPSI0Ii8+CiAgPGNpcmNsZSBjeD0iMjQwIiBjeT0iMTU1IiByPSIxNiIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMDBDODgyIiBzdHJva2Utd2lkdGg9IjQiIHN0cm9rZS1kYXNoYXJyYXk9IjgwIDIwIiB0cmFuc2Zvcm09InJvdGF0ZSgtOTAgMjQwIDE1NSkiLz4KICA8dGV4dCB4PSIyNDAiIHk9IjE1OSIgZmlsbD0iI2ZmZiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTAiIGZvbnQtd2VpZ2h0PSJib2xkIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj44MCU8L3RleHQ+CiAgPHRleHQgeD0iMjY4IiB5PSIxNTAiIGZpbGw9IiNjY2MiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjExIiBmb250LXdlaWdodD0iYm9sZCI+T25ib2FyZGluZzwvdGV4dD4KICA8dGV4dCB4PSIyNjgiIHk9IjE2NiIgZmlsbD0iIzY2NiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iOSI+MTIgb2YgMTUgZG9uZTwvdGV4dD4KICA8dGV4dCB4PSIyMjUiIHk9IjE5OCIgZmlsbD0iIzY2NiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iOSI+TmV3IGhpcmUgdHJhY2s8L3RleHQ+CgogIDwhLS0gbW9kdWxlIGNhcmQgMiAtLT4KICA8cmVjdCB4PSIzOTIiIHk9IjEyMiIgd2lkdGg9IjE3MCIgaGVpZ2h0PSI5MiIgZmlsbD0iIzBkMGQwZCIgcng9IjYiIHN0cm9rZT0iIzAwQzg4MiIgc3Ryb2tlLW9wYWNpdHk9IjAuNCIvPgogIDxjaXJjbGUgY3g9IjQyMiIgY3k9IjE1NSIgcj0iMTYiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzJhMmEyYSIgc3Ryb2tlLXdpZHRoPSI0Ii8+CiAgPGNpcmNsZSBjeD0iNDIyIiBjeT0iMTU1IiByPSIxNiIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMDBDODgyIiBzdHJva2Utd2lkdGg9IjQiIHN0cm9rZS1kYXNoYXJyYXk9IjYwIDQwIiB0cmFuc2Zvcm09InJvdGF0ZSgtOTAgNDIyIDE1NSkiLz4KICA8dGV4dCB4PSI0MjIiIHk9IjE1OSIgZmlsbD0iI2ZmZiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTAiIGZvbnQtd2VpZ2h0PSJib2xkIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj42MCU8L3RleHQ+CiAgPHRleHQgeD0iNDUwIiB5PSIxNTAiIGZpbGw9IiNjY2MiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjExIiBmb250LXdlaWdodD0iYm9sZCI+RmluZSBEaW5pbmc8L3RleHQ+CiAgPHRleHQgeD0iNDUwIiB5PSIxNjYiIGZpbGw9IiM2NjYiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjkiPjkgb2YgMTUgZG9uZTwvdGV4dD4KICA8dGV4dCB4PSI0MDciIHk9IjE5OCIgZmlsbD0iIzY2NiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iOSI+U2VydmljZSBzdGFuZGFyZHM8L3RleHQ+CgogIDwhLS0gYm90dG9tIHN0YXRzIHJvdyAtLT4KICA8cmVjdCB4PSIxOTAiIHk9IjI0MiIgd2lkdGg9IjM5MCIgaGVpZ2h0PSIxMzgiIGZpbGw9IiMxNDE0MTQiIHJ4PSI4Ii8+CiAgPHRleHQgeD0iMjEwIiB5PSIyNjgiIGZpbGw9IiM4ODgiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjExIiBsZXR0ZXItc3BhY2luZz0iMSI+UExBVEZPUk0gT1ZFUlZJRVc8L3RleHQ+CgogIDwhLS0gc3RhdCAxIC0tPgogIDxyZWN0IHg9IjIxMCIgeT0iMjgyIiB3aWR0aD0iMTEwIiBoZWlnaHQ9IjgwIiBmaWxsPSIjMDBDODgyIiByeD0iNiIgb3BhY2l0eT0iMC4xMiIvPgogIDx0ZXh0IHg9IjI2NSIgeT0iMzIyIiBmaWxsPSIjMDBDODgyIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIyNiIgZm9udC13ZWlnaHQ9ImJvbGQiIHRleHQtYW5jaG9yPSJtaWRkbGUiPjI1KzwvdGV4dD4KICA8dGV4dCB4PSIyNjUiIHk9IjM0MiIgZmlsbD0iIzg4OCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iOSIgdGV4dC1hbmNob3I9Im1pZGRsZSI+UmVzdGF1cmFudHM8L3RleHQ+CgogIDwhLS0gc3RhdCAyIC0tPgogIDxyZWN0IHg9IjMyOCIgeT0iMjgyIiB3aWR0aD0iMTEwIiBoZWlnaHQ9IjgwIiBmaWxsPSIjMGQwZDBkIiByeD0iNiIgc3Ryb2tlPSIjMmEyYTJhIi8+CiAgPHRleHQgeD0iMzgzIiB5PSIzMjIiIGZpbGw9IiNGMkYwRUIiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjI2IiBmb250LXdlaWdodD0iYm9sZCIgdGV4dC1hbmNob3I9Im1pZGRsZSI+MTAwJTwvdGV4dD4KICA8dGV4dCB4PSIzODMiIHk9IjM0MiIgZmlsbD0iIzg4OCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iOSIgdGV4dC1hbmNob3I9Im1pZGRsZSI+T2ZmbGluZSBSZWFkeTwvdGV4dD4KCiAgPCEtLSBzdGF0IDMgLS0+CiAgPHJlY3QgeD0iNDQ2IiB5PSIyODIiIHdpZHRoPSIxMTYiIGhlaWdodD0iODAiIGZpbGw9IiMwZDBkMGQiIHJ4PSI2IiBzdHJva2U9IiMyYTJhMmEiLz4KICA8dGV4dCB4PSI1MDQiIHk9IjMyMiIgZmlsbD0iI0YyRjBFQiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMjYiIGZvbnQtd2VpZ2h0PSJib2xkIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj4wPC90ZXh0PgogIDx0ZXh0IHg9IjUwNCIgeT0iMzQyIiBmaWxsPSIjODg4IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSI5IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5Mb2dpbnMgTmVlZGVkPC90ZXh0Pgo8L3N2Zz4K" alt="Floorline AI training platform dashboard showing onboarding and fine dining training modules with progress tracking, serving 25+ restaurants with 100% offline access and zero logins required" width="600" height="400" style="width:100%;height:auto;border:1px solid var(--dim);border-radius:12px;box-shadow:0 20px 60px rgba(0,200,130,0.08)" loading="eager" />
+  </div>
+  <div class="hero-stats">
+    <div><div class="count-up" data-target="25">0</div><div class="stat-label">Restaurants Trained</div></div>
+    <div><div class="count-up" data-target="3">0</div><div class="stat-label">Platforms Built</div></div>
+    <div><div class="count-up" data-target="100">0</div><div class="stat-label">% Offline Ready</div></div>
+    <div><div class="count-up" data-target="0">0</div><div class="stat-label">Logins Required</div></div>
+  </div>
+</section>
+
+<!-- TECH BADGE STRIP -->
+<div id="tech-strip">
+  <div class="strip-track" id="stripTrack">
+    <span class="badge"><span class="badge-dot"></span>Claude AI Powered</span>
+    <span class="badge"><span class="badge-dot"></span>Offline Ready</span>
+    <span class="badge"><span class="badge-dot"></span>No Login Required</span>
+    <span class="badge"><span class="badge-dot"></span>Any Device</span>
+    <span class="badge"><span class="badge-dot"></span>Zero Subscription Fees</span>
+    <span class="badge"><span class="badge-dot"></span>Custom Built</span>
+    <span class="badge"><span class="badge-dot"></span>Multi-Location Scalable</span>
+    <span class="badge"><span class="badge-dot"></span>Thumb Drive Deployable</span>
+    <span class="badge"><span class="badge-dot"></span>HTML5 Native</span>
+    <span class="badge"><span class="badge-dot"></span>Instant Deploy</span>
+    <!-- duplicate for seamless loop -->
+    <span class="badge"><span class="badge-dot"></span>Claude AI Powered</span>
+    <span class="badge"><span class="badge-dot"></span>Offline Ready</span>
+    <span class="badge"><span class="badge-dot"></span>No Login Required</span>
+    <span class="badge"><span class="badge-dot"></span>Any Device</span>
+    <span class="badge"><span class="badge-dot"></span>Zero Subscription Fees</span>
+    <span class="badge"><span class="badge-dot"></span>Custom Built</span>
+    <span class="badge"><span class="badge-dot"></span>Multi-Location Scalable</span>
+    <span class="badge"><span class="badge-dot"></span>Thumb Drive Deployable</span>
+    <span class="badge"><span class="badge-dot"></span>HTML5 Native</span>
+    <span class="badge"><span class="badge-dot"></span>Instant Deploy</span>
+  </div>
+</div>
+
+<!-- WHAT WE BUILD -->
+<section id="what">
+  <p class="section-eyebrow fade-in">Our Capabilities</p>
+  <h2 class="section-title fade-in">We don't just consult.<br><em>We build.</em></h2>
+  <p class="section-body fade-in">Every platform is custom-built to reflect how your business actually operates — not a template, not a subscription. Yours.</p>
+  <div class="what-grid">
+    <div class="what-card fade-in"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0OCA0OCIgd2lkdGg9IjQ4IiBoZWlnaHQ9IjQ4Ij48cmVjdCB3aWR0aD0iNDgiIGhlaWdodD0iNDgiIHJ4PSIxMCIgZmlsbD0iIzAwQzg4MiIgZmlsbC1vcGFjaXR5PSIwLjEiLz48cGF0aCBkPSJNMjQgMTAgTDM4IDE3IEwyNCAyNCBMMTAgMTcgWiIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMDBDODgyIiBzdHJva2Utd2lkdGg9IjIuNSIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPjxwYXRoIGQ9Ik0xNiAyMSBMMTYgMzAgUTI0IDM1IDMyIDMwIEwzMiAyMSIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMDBDODgyIiBzdHJva2Utd2lkdGg9IjIuNSIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPjxsaW5lIHgxPSIzOCIgeTE9IjE3IiB4Mj0iMzgiIHkyPSIyNiIgc3Ryb2tlPSIjMDBDODgyIiBzdHJva2Utd2lkdGg9IjIuNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+PC9zdmc+" alt="Staff training platform icon" width="48" height="48" style="margin-bottom:18px" loading="lazy" /><div class="card-num">01</div><div class="card-title">Staff Training Platforms</div><div class="card-body">Comprehensive onboarding systems covering product knowledge, service standards, objection handling, guides, and more. Interactive, searchable, and offline.</div><span class="card-tag">Training · Onboarding · SOPs</span></div>
+    <div class="what-card fade-in"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0OCA0OCIgd2lkdGg9IjQ4IiBoZWlnaHQ9IjQ4Ij48cmVjdCB3aWR0aD0iNDgiIGhlaWdodD0iNDgiIHJ4PSIxMCIgZmlsbD0iIzAwQzg4MiIgZmlsbC1vcGFjaXR5PSIwLjEiLz48Y2lyY2xlIGN4PSIyNCIgY3k9IjI0IiByPSI2IiBmaWxsPSJub25lIiBzdHJva2U9IiMwMEM4ODIiIHN0cm9rZS13aWR0aD0iMi41Ii8+PHBhdGggZD0iTTI0IDEyIEwyNCAxNiBNMjQgMzIgTDI0IDM2IE0xMiAyNCBMMTYgMjQgTTMyIDI0IEwzNiAyNCBNMTUuNSAxNS41IEwxOCAxOCBNMzAgMzAgTDMyLjUgMzIuNSBNMzIuNSAxNS41IEwzMCAxOCBNMTggMzAgTDE1LjUgMzIuNSIgc3Ryb2tlPSIjMDBDODgyIiBzdHJva2Utd2lkdGg9IjIuNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+PC9zdmc+" alt="Manager and operations portal icon" width="48" height="48" style="margin-bottom:18px" loading="lazy" /><div class="card-num">02</div><div class="card-title">Manager & Operations Portals</div><div class="card-body">Custom manager dashboards with shift briefings, HR contacts, location data, compliance tools, and team management — built for the people running the floor.</div><span class="card-tag">Ops · HR · Compliance</span></div>
+    <div class="what-card fade-in"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0OCA0OCIgd2lkdGg9IjQ4IiBoZWlnaHQ9IjQ4Ij48cmVjdCB3aWR0aD0iNDgiIGhlaWdodD0iNDgiIHJ4PSIxMCIgZmlsbD0iIzAwQzg4MiIgZmlsbC1vcGFjaXR5PSIwLjEiLz48Y2lyY2xlIGN4PSIyNCIgY3k9IjE4IiByPSI2IiBmaWxsPSJub25lIiBzdHJva2U9IiMwMEM4ODIiIHN0cm9rZS13aWR0aD0iMi41Ii8+PHBhdGggZD0iTTE0IDM4IFExNCAyOCAyNCAyOCBRMzQgMjggMzQgMzgiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzAwQzg4MiIgc3Ryb2tlLXdpZHRoPSIyLjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPjwvc3ZnPg==" alt="Guest-facing tools icon" width="48" height="48" style="margin-bottom:18px" loading="lazy" /><div class="card-num">03</div><div class="card-title">Guest-Facing Tools</div><div class="card-body">Allergen guides, menu explainers, and guest experience platforms designed to elevate service and reduce liability — accessible to staff and guests alike.</div><span class="card-tag">Guest Experience · Allergens</span></div>
+    <div class="what-card fade-in"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0OCA0OCIgd2lkdGg9IjQ4IiBoZWlnaHQ9IjQ4Ij48cmVjdCB3aWR0aD0iNDgiIGhlaWdodD0iNDgiIHJ4PSIxMCIgZmlsbD0iIzAwQzg4MiIgZmlsbC1vcGFjaXR5PSIwLjEiLz48cmVjdCB4PSIxMSIgeT0iMTMiIHdpZHRoPSIxMCIgaGVpZ2h0PSI4IiByeD0iMiIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMDBDODgyIiBzdHJva2Utd2lkdGg9IjIuNSIvPjxyZWN0IHg9IjI3IiB5PSIyNyIgd2lkdGg9IjEwIiBoZWlnaHQ9IjgiIHJ4PSIyIiBmaWxsPSJub25lIiBzdHJva2U9IiMwMEM4ODIiIHN0cm9rZS13aWR0aD0iMi41Ii8+PHBhdGggZD0iTTIxIDE3IEwzMiAxNyBMMzIgMjciIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzAwQzg4MiIgc3Ryb2tlLXdpZHRoPSIyLjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPjwvc3ZnPg==" alt="Workflow automation icon" width="48" height="48" style="margin-bottom:18px" loading="lazy" /><div class="card-num">04</div><div class="card-title">Workflow Automation</div><div class="card-body">Custom AI-powered workflow tools that streamline operations, reduce manual processes, and keep your team aligned — from daily briefings to compliance tracking.</div><span class="card-tag">Automation · AI · Efficiency</span></div>
+    <div class="what-card fade-in"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0OCA0OCIgd2lkdGg9IjQ4IiBoZWlnaHQ9IjQ4Ij48cmVjdCB3aWR0aD0iNDgiIGhlaWdodD0iNDgiIHJ4PSIxMCIgZmlsbD0iIzAwQzg4MiIgZmlsbC1vcGFjaXR5PSIwLjEiLz48cmVjdCB4PSIxMCIgeT0iMjIiIHdpZHRoPSI4IiBoZWlnaHQ9IjgiIHJ4PSIxLjUiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzAwQzg4MiIgc3Ryb2tlLXdpZHRoPSIyLjUiLz48cmVjdCB4PSIzMCIgeT0iMjIiIHdpZHRoPSI4IiBoZWlnaHQ9IjgiIHJ4PSIxLjUiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzAwQzg4MiIgc3Ryb2tlLXdpZHRoPSIyLjUiLz48cmVjdCB4PSIyMCIgeT0iMjIiIHdpZHRoPSI4IiBoZWlnaHQ9IjgiIHJ4PSIxLjUiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzAwQzg4MiIgc3Ryb2tlLXdpZHRoPSIyLjUiLz48cGF0aCBkPSJNMjQgMjIgTDI0IDE2IE0xNCAyMiBMMTQgMTYgTDM0IDE2IEwzNCAyMiIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMDBDODgyIiBzdHJva2Utd2lkdGg9IjIuNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+PC9zdmc+" alt="Franchise and multi-location systems icon" width="48" height="48" style="margin-bottom:18px" loading="lazy" /><div class="card-num">05</div><div class="card-title">Franchise & Multi-Location Systems</div><div class="card-body">Scalable platforms built for businesses with multiple locations. Consistent training, consistent standards, delivered the same way across every site.</div><span class="card-tag">Franchise · Scale · Consistency</span></div>
+    <div class="what-card fade-in"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0OCA0OCIgd2lkdGg9IjQ4IiBoZWlnaHQ9IjQ4Ij48cmVjdCB3aWR0aD0iNDgiIGhlaWdodD0iNDgiIHJ4PSIxMCIgZmlsbD0iIzAwQzg4MiIgZmlsbC1vcGFjaXR5PSIwLjEiLz48Y2lyY2xlIGN4PSIyNCIgY3k9IjI0IiByPSI0IiBmaWxsPSIjMDBDODgyIi8+PGNpcmNsZSBjeD0iMjQiIGN5PSIyNCIgcj0iMTMiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzAwQzg4MiIgc3Ryb2tlLXdpZHRoPSIyLjUiIHN0cm9rZS1kYXNoYXJyYXk9IjQgNCIvPjxjaXJjbGUgY3g9IjI0IiBjeT0iMTEiIHI9IjIuNSIgZmlsbD0iIzAwQzg4MiIvPjxjaXJjbGUgY3g9IjM3IiBjeT0iMjQiIHI9IjIuNSIgZmlsbD0iIzAwQzg4MiIvPjxjaXJjbGUgY3g9IjI0IiBjeT0iMzciIHI9IjIuNSIgZmlsbD0iIzAwQzg4MiIvPjxjaXJjbGUgY3g9IjExIiBjeT0iMjQiIHI9IjIuNSIgZmlsbD0iIzAwQzg4MiIvPjwvc3ZnPg==" alt="Custom AI business tools icon" width="48" height="48" style="margin-bottom:18px" loading="lazy" /><div class="card-num">06</div><div class="card-title">Custom AI Business Tools</div><div class="card-body">Bespoke AI-powered apps for any business challenge — retail, healthcare, corporate operations. If you have a team and a process, we build a smarter system.</div><span class="card-tag">AI · Custom · Any Industry</span></div>
+  </div>
+</section>
+
+<!-- LIVE AI DEMO -->
+<section id="demo">
+  <p class="section-eyebrow fade-in">Live Demo</p>
+  <h2 class="section-title fade-in">Ask our AI anything.<br><em>Right now.</em></h2>
+  <p class="section-body fade-in">This is a live preview of what Floorline AI builds — ask a real question about training, operations, or workflow and see how it responds.</p>
+  <div class="demo-container">
+    <div class="demo-left fade-in">
+      <div class="demo-window">
+        <div class="demo-titlebar">
+          <div class="demo-dot" style="background:#ff5f57"></div>
+          <div class="demo-dot" style="background:#febc2e"></div>
+          <div class="demo-dot" style="background:#28c840"></div>
+          <span class="demo-title-text">Floorline AI — Training Assistant</span>
+        </div>
+        <div class="demo-messages" id="demoMessages">
+          <div class="msg msg-ai"><strong>Floorline AI</strong><br>Hi! I'm a live demo of what Floorline AI builds for your team. Ask me anything about training, onboarding, operations, or workflow — I'm here to show you what's possible.</div>
+        </div>
+        <div class="demo-input-row">
+          <input type="text" class="demo-input" id="demoInput" placeholder="Ask about training, ops, onboarding..." />
+          <button class="demo-send" id="demoSend" onclick="sendDemoMessage()">Send</button>
+        </div>
+      </div>
+    </div>
+    <div class="demo-right fade-in">
+      <div class="demo-suggestion-label">Try asking:</div>
+      <div class="demo-suggestions">
+        <button class="demo-suggestion" onclick="fillDemo('How do I train a new server on fine dining service?')">How do I train a new server on fine dining service?</button>
+        <button class="demo-suggestion" onclick="fillDemo('What are the steps for opening shift procedures?')">What are the steps for opening shift procedures?</button>
+        <button class="demo-suggestion" onclick="fillDemo('How should I handle a guest with a gluten allergy?')">How should I handle a guest with a gluten allergy?</button>
+        <button class="demo-suggestion" onclick="fillDemo('What makes a great manager briefing?')">What makes a great manager briefing?</button>
+        <button class="demo-suggestion" onclick="fillDemo('How can AI improve my team training?')">How can AI improve my team training?</button>
+      </div>
+      <div style="margin-top:28px;padding:24px;background:var(--bg3);border-left:2px solid var(--green);">
+        <p style="font-size:12px;letter-spacing:2px;text-transform:uppercase;color:var(--green);margin-bottom:12px;">What you're experiencing</p>
+        <p style="font-size:14px;color:var(--grey);line-height:1.8;">This exact type of AI interface is what Floorline AI builds for your team — custom-trained on your menu, your SOPs, your brand voice. Imagine this on every device in your operation.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section id="how" style="display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:start">
+  <div>
+    <p class="section-eyebrow fade-in">The Process</p>
+    <h2 class="section-title fade-in">From conversation<br>to <em>deployment.</em></h2>
+    <p class="section-body fade-in">No bloated discovery phases. No months of waiting. We move fast, build smart, and deliver tools your team can use immediately.</p>
+    <div class="how-steps">
+      <div class="step fade-in"><div class="step-num">1</div><div><div class="step-title">Discovery Call</div><div class="step-body">We learn your business, your team, your challenges. One conversation is usually enough to map out exactly what needs to be built.</div></div></div>
+      <div class="step fade-in"><div class="step-num">2</div><div><div class="step-title">Custom Build</div><div class="step-body">We design and build your platform from scratch — tailored to your brand, your language, and how your team actually works.</div></div></div>
+      <div class="step fade-in"><div class="step-num">3</div><div><div class="step-title">Deploy Anywhere</div><div class="step-body">Your platform runs offline, needs no login, and works on any device. Hand it to your team on day one — no IT department required.</div></div></div>
+      <div class="step fade-in"><div class="step-num">4</div><div><div class="step-title">Iterate & Scale</div><div class="step-body">We update, expand, and improve as your business grows. Your platform grows with you.</div></div></div>
+    </div>
+  </div>
+  <div style="padding-top:60px">
+    <div class="fade-in" style="background:var(--bg3);padding:44px 40px;border-left:2px solid var(--green)">
+      <p style="font-family:var(--serif);font-size:26px;font-weight:300;line-height:1.5;margin-bottom:28px;font-style:italic;color:var(--white)">"If your training lives in a binder or your ops depend on who showed up that day — it's time for Floorline AI."</p>
+      <p style="font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--green)">Michael — Founder, Floorline AI</p>
+      <p style="font-size:12px;color:var(--grey);margin-top:4px">Trained teams at scale across a nationally recognized restaurant brand</p>
+    </div>
+    <div class="fade-in" style="background:var(--bg2);padding:32px 40px;margin-top:2px;border-left:2px solid var(--dim)">
+      <p style="font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--grey);margin-bottom:18px">Platform Features</p>
+      <div style="display:flex;flex-direction:column;gap:10px">
+        <div class="platform-item"><div class="platform-dot"></div><span class="platform-name">Offline-ready</span><span style="margin-left:auto;font-size:12px;color:var(--green)">✓</span></div>
+        <div class="platform-item"><div class="platform-dot"></div><span class="platform-name">No login required</span><span style="margin-left:auto;font-size:12px;color:var(--green)">✓</span></div>
+        <div class="platform-item"><div class="platform-dot"></div><span class="platform-name">Any device</span><span style="margin-left:auto;font-size:12px;color:var(--green)">✓</span></div>
+        <div class="platform-item"><div class="platform-dot"></div><span class="platform-name">No subscription fees</span><span style="margin-left:auto;font-size:12px;color:var(--green)">✓</span></div>
+        <div class="platform-item" style="border:none"><div class="platform-dot"></div><span class="platform-name">100% custom built</span><span style="margin-left:auto;font-size:12px;color:var(--green)">✓</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CASE STUDY -->
+<section id="case">
+  <p class="section-eyebrow fade-in">Case Study</p>
+  <h2 class="section-title fade-in">Real platform.<br><em>Real results.</em></h2>
+  <div class="case-inner">
+    <div>
+      <span class="case-label fade-in">National Restaurant Brand · 25+ Locations</span>
+      <h3 class="case-title fade-in">A Complete AI Training & Operations Ecosystem</h3>
+      <p class="case-body fade-in">Built for a nationally recognized full-service restaurant brand, this full-suite offline AI platform consists of three interconnected tools — all deployable from a single thumb drive with zero login required.</p>
+      <p class="case-body fade-in">The platform covers new hire onboarding, product education, shift briefings, HR contacts, allergen guides, objection handling, and location-specific manager tools — all in one seamless experience.</p>
+      <div class="platforms fade-in">
+        <div class="platform-item"><div class="platform-dot"></div><div><div class="platform-name">Staff Trainer App</div><div style="font-size:13px;color:var(--grey)">Product guides, onboarding checklists, objection handling</div></div></div>
+        <div class="platform-item"><div class="platform-dot"></div><div><div class="platform-name">Manager Portal</div><div style="font-size:13px;color:var(--grey)">Shift briefings, HR contacts, ops tools, location data</div></div></div>
+        <div class="platform-item" style="border:none"><div class="platform-dot"></div><div><div class="platform-name">Guest-Facing Allergen Guide</div><div style="font-size:13px;color:var(--grey)">Full allergen guide, searchable, offline-ready</div></div></div>
+      </div>
+    </div>
+    <div>
+      <div class="case-metrics fade-in">
+        <div class="metric"><div class="metric-val">3</div><div class="metric-desc">Standalone platforms built</div></div>
+        <div class="metric"><div class="metric-val">25+</div><div class="metric-desc">Nationwide locations</div></div>
+        <div class="metric"><div class="metric-val">0</div><div class="metric-desc">Logins or subscriptions</div></div>
+        <div class="metric"><div class="metric-val">1</div><div class="metric-desc">Thumb drive deployment</div></div>
+      </div>
+      <div class="fade-in" style="background:var(--bg3);padding:32px;margin-top:2px;border-top:2px solid var(--green)">
+        <p style="font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--grey);margin-bottom:14px">The Challenge</p>
+        <p style="font-size:14px;color:var(--grey);line-height:1.9">A nationally recognized full-service restaurant brand needed a unified training and operations system that could work everywhere — including locations without reliable internet — while staying on-brand and accessible to every level of staff.</p>
+        <p style="font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--grey);margin-top:20px;margin-bottom:14px">The Solution</p>
+        <p style="font-size:14px;color:var(--grey);line-height:1.9">Three custom HTML platforms built with AI, designed to run completely offline from a thumb drive. No IT infrastructure. No monthly fees. No training required to use them.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section id="testimonials">
+  <p class="section-eyebrow fade-in">What People Say</p>
+  <h2 class="section-title fade-in">Built by operators.<br><em>Trusted by teams.</em></h2>
+  <div class="testimonial-grid">
+    <div class="testimonial-card fade-in">
+      <div class="t-stars">★★★★★</div>
+      <p class="t-quote">"Finally a training tool that actually works the way our team works. No logins, no crashes, no excuses."</p>
+      <div class="t-name">Restaurant General Manager</div>
+      <div class="t-role">Multi-location full-service restaurant brand</div>
+    </div>
+    <div class="testimonial-card fade-in">
+      <div class="t-stars">★★★★★</div>
+      <p class="t-quote">"The manager portal changed how we run shifts. Everything is in one place and it works even when the WiFi doesn't."</p>
+      <div class="t-name">Operations Manager</div>
+      <div class="t-role">Nationally recognized restaurant brand</div>
+    </div>
+    <div class="testimonial-card fade-in">
+      <div class="t-stars">★★★★★</div>
+      <p class="t-quote">"New hires get up to speed faster than ever. The onboarding platform is something I wish we'd had years ago."</p>
+      <div class="t-name">Training Director</div>
+      <div class="t-role">Hospitality group, 20+ locations</div>
+    </div>
+  </div>
+</section>
+
+<!-- INDUSTRIES -->
+<section id="industries">
+  <p class="section-eyebrow fade-in">Who We Serve</p>
+  <h2 class="section-title fade-in">Any business.<br><em>Any floor.</em></h2>
+  <p class="section-body fade-in">Select your industry to see how Floorline AI builds for you.</p>
+  <div class="industry-tabs fade-in">
+    <button class="ind-tab active" onclick="switchIndustry('restaurants',this)">🍷 Restaurants</button>
+    <button class="ind-tab" onclick="switchIndustry('retail',this)">🛍️ Retail</button>
+    <button class="ind-tab" onclick="switchIndustry('franchise',this)">🔗 Franchise</button>
+    <button class="ind-tab" onclick="switchIndustry('healthcare',this)">🏥 Healthcare</button>
+    <button class="ind-tab" onclick="switchIndustry('corporate',this)">🏢 Corporate</button>
+    <button class="ind-tab" onclick="switchIndustry('smb',this)">⚡ SMB</button>
+  </div>
+  <div class="industry-content fade-in" id="industryContent">
+    <div>
+      <h3>Restaurants & Hospitality</h3>
+      <p>Training platforms, product knowledge guides, shift briefing tools, allergen platforms, and manager portals built specifically for food and beverage operations.</p>
+      <p>From new hire onboarding to menu knowledge and objection handling — we build the complete training ecosystem your team actually uses on the floor.</p>
+      <div class="industry-features">
+        <div class="ind-feature">Staff trainer apps with product & menu knowledge</div>
+        <div class="ind-feature">Manager portals with shift briefings & HR tools</div>
+        <div class="ind-feature">Guest-facing allergen and menu guides</div>
+        <div class="ind-feature">Offline-ready for any location, any WiFi situation</div>
+        <div class="ind-feature">Scalable across single or multi-location brands</div>
+      </div>
+    </div>
+    <div class="industry-visual">
+      <div class="ind-stat-grid">
+        <div class="ind-stat"><div class="ind-stat-val">25+</div><div class="ind-stat-label">Restaurants served</div></div>
+        <div class="ind-stat"><div class="ind-stat-val">3</div><div class="ind-stat-label">Platform modules</div></div>
+        <div class="ind-stat"><div class="ind-stat-val">0</div><div class="ind-stat-label">IT setup needed</div></div>
+        <div class="ind-stat"><div class="ind-stat-val">∞</div><div class="ind-stat-label">Scalability</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA / CONTACT -->
+<section id="contact">
+  <div class="contact-line"></div>
+  <p class="section-eyebrow">Let's Build</p>
+  <h2 class="section-title">Ready to build something<br><em>your team actually uses?</em></h2>
+  <p class="section-body">Tell us about your business. We'll tell you exactly what we can build — and how fast.</p>
+
+  <!-- Contact info bar -->
+  <div style="display:flex;gap:40px;justify-content:center;flex-wrap:wrap;margin-top:36px;margin-bottom:44px">
+    <a href="tel:480-388-1877" style="display:flex;align-items:center;gap:10px;color:var(--grey);text-decoration:none;font-size:13px;letter-spacing:1px;transition:color 0.3s" onmouseover="this.style.color='var(--white)'" onmouseout="this.style.color='var(--grey)'">
+      <span style="color:var(--green);font-size:16px">📞</span> 480-388-1877
+    </a>
+    <a href="mailto:Floorlineai@gmail.com" style="display:flex;align-items:center;gap:10px;color:var(--grey);text-decoration:none;font-size:13px;letter-spacing:1px;transition:color 0.3s" onmouseover="this.style.color='var(--white)'" onmouseout="this.style.color='var(--grey)'">
+      <span style="color:var(--green);font-size:16px">✉️</span> Floorlineai@gmail.com
+    </a>
+    <a href="https://floorlineai.com" style="display:flex;align-items:center;gap:10px;color:var(--grey);text-decoration:none;font-size:13px;letter-spacing:1px;transition:color 0.3s" onmouseover="this.style.color='var(--white)'" onmouseout="this.style.color='var(--grey)'">
+      <span style="color:var(--green);font-size:16px">🌐</span> floorlineai.com
+    </a>
+  </div>
+
+  <!-- Contact form (Netlify Forms - submissions emailed automatically) -->
+  <div style="max-width:580px;margin:0 auto 48px;background:var(--bg2);border:1px solid var(--dim);padding:44px;text-align:left">
+    <p style="font-size:11px;letter-spacing:3px;text-transform:uppercase;color:var(--green);margin-bottom:28px">Send a Message</p>
+    <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" onsubmit="return handleNetlifySubmit(this)">
+      <!-- Netlify hidden fields -->
+      <input type="hidden" name="form-name" value="contact">
+      <p style="display:none"><label>Don't fill this out if you're human: <input name="bot-field"></label></p>
+
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:16px">
+        <div>
+          <label style="font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:var(--grey);display:block;margin-bottom:8px">Name</label>
+          <input type="text" name="name" id="cf-name" required placeholder="Your name" style="width:100%;background:var(--bg3);border:1px solid var(--dim);color:var(--white);padding:12px 16px;font-family:var(--sans);font-size:14px;outline:none;transition:border-color 0.3s" onfocus="this.style.borderColor='var(--green)'" onblur="this.style.borderColor='var(--dim)'">
+        </div>
+        <div>
+          <label style="font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:var(--grey);display:block;margin-bottom:8px">Phone</label>
+          <input type="tel" name="phone" id="cf-phone" placeholder="Your phone" style="width:100%;background:var(--bg3);border:1px solid var(--dim);color:var(--white);padding:12px 16px;font-family:var(--sans);font-size:14px;outline:none;transition:border-color 0.3s" onfocus="this.style.borderColor='var(--green)'" onblur="this.style.borderColor='var(--dim)'">
+        </div>
+      </div>
+      <div style="margin-bottom:16px">
+        <label style="font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:var(--grey);display:block;margin-bottom:8px">Email</label>
+        <input type="email" name="email" id="cf-email" required placeholder="your@email.com" style="width:100%;background:var(--bg3);border:1px solid var(--dim);color:var(--white);padding:12px 16px;font-family:var(--sans);font-size:14px;outline:none;transition:border-color 0.3s" onfocus="this.style.borderColor='var(--green)'" onblur="this.style.borderColor='var(--dim)'">
+      </div>
+      <div style="margin-bottom:16px">
+        <label style="font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:var(--grey);display:block;margin-bottom:8px">Business Type</label>
+        <select name="business-type" id="cf-type" style="width:100%;background:var(--bg3);border:1px solid var(--dim);color:var(--grey);padding:12px 16px;font-family:var(--sans);font-size:14px;outline:none;cursor:pointer">
+          <option value="">Select your industry</option>
+          <option>Restaurant / Hospitality</option>
+          <option>Retail</option>
+          <option>Franchise Brand</option>
+          <option>Healthcare</option>
+          <option>Corporate / Enterprise</option>
+          <option>Startup / SMB</option>
+          <option>Other</option>
+        </select>
+      </div>
+      <div style="margin-bottom:28px">
+        <label style="font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:var(--grey);display:block;margin-bottom:8px">Tell us about your project</label>
+        <textarea name="message" id="cf-msg" rows="4" placeholder="What do you need built?" style="width:100%;background:var(--bg3);border:1px solid var(--dim);color:var(--white);padding:12px 16px;font-family:var(--sans);font-size:14px;outline:none;resize:vertical;transition:border-color 0.3s" onfocus="this.style.borderColor='var(--green)'" onblur="this.style.borderColor='var(--dim)'"></textarea>
+      </div>
+      <button type="submit" style="width:100%;background:var(--green);color:var(--bg);border:none;padding:16px;font-family:var(--sans);font-size:12px;letter-spacing:2px;text-transform:uppercase;cursor:pointer;transition:opacity 0.3s" onmouseover="this.style.opacity='0.85'" onmouseout="this.style.opacity='1'">Send Message →</button>
+      <div id="cf-success" style="display:none;margin-top:20px;padding:16px;border:1px solid var(--green);color:var(--green);font-size:13px;text-align:center;letter-spacing:1px">✓ Message sent — we'll be in touch within 24 hours.</div>
+    </form>
+  </div>
+
+  <div style="display:flex;gap:20px;justify-content:center;flex-wrap:wrap">
+    <a href="mailto:Floorlineai@gmail.com" class="btn-primary">Start a Project</a>
+    <a href="#demo" class="btn-ghost">Try the AI Demo</a>
+  </div>
+  <p class="calendly-hint" style="margin-top:20px">Or <a href="tel:480-388-1877">call us at 480-388-1877</a> — no pressure, just a conversation.</p>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-logo">Floorline <span>AI</span></div>
+  <div class="footer-tagline">Built for the floor. Powered by AI.</div>
+  <!-- Social links -->
+  <div style="display:flex;gap:28px;justify-content:center;margin:20px 0;flex-wrap:wrap">
+    <a href="https://www.linkedin.com/company/floorlineai" target="_blank" rel="noopener" style="color:var(--grey);text-decoration:none;font-size:11px;letter-spacing:2px;text-transform:uppercase;transition:color 0.3s" onmouseover="this.style.color='var(--white)'" onmouseout="this.style.color='var(--grey)'">LinkedIn</a>
+    <a href="https://www.facebook.com/floorlineai" target="_blank" rel="noopener" style="color:var(--grey);text-decoration:none;font-size:11px;letter-spacing:2px;text-transform:uppercase;transition:color 0.3s" onmouseover="this.style.color='var(--white)'" onmouseout="this.style.color='var(--grey)'">Facebook</a>
+    <a href="https://www.instagram.com/floorlineai" target="_blank" rel="noopener" style="color:var(--grey);text-decoration:none;font-size:11px;letter-spacing:2px;text-transform:uppercase;transition:color 0.3s" onmouseover="this.style.color='var(--white)'" onmouseout="this.style.color='var(--grey)'">Instagram</a>
+    <a href="mailto:Floorlineai@gmail.com" style="color:var(--grey);text-decoration:none;font-size:11px;letter-spacing:2px;text-transform:uppercase;transition:color 0.3s" onmouseover="this.style.color='var(--white)'" onmouseout="this.style.color='var(--grey)'">Email</a>
+    <a href="tel:480-388-1877" style="color:var(--grey);text-decoration:none;font-size:11px;letter-spacing:2px;text-transform:uppercase;transition:color 0.3s" onmouseover="this.style.color='var(--white)'" onmouseout="this.style.color='var(--grey)'">480-388-1877</a>
+  </div>
+  <div class="footer-copy">© 2025 Floorline AI LLC · Phoenix, AZ · All rights reserved.</div>
+</footer>
+
+<script>
+// ── CUSTOM CURSOR
+const cursor = document.getElementById('cursor');
+const ring = document.getElementById('cursorRing');
+let mx=0,my=0,rx=0,ry=0;
+document.addEventListener('mousemove',e=>{
+  mx=e.clientX; my=e.clientY;
+  cursor.style.left=mx+'px'; cursor.style.top=my+'px';
+});
+function animRing(){
+  rx+=(mx-rx)*0.12; ry+=(my-ry)*0.12;
+  ring.style.left=rx+'px'; ring.style.top=ry+'px';
+  requestAnimationFrame(animRing);
+}
+animRing();
+document.querySelectorAll('a,button,.what-card,.demo-suggestion,.ind-btn,.ind-tab').forEach(el=>{
+  el.addEventListener('mouseenter',()=>ring.classList.add('expand'));
+  el.addEventListener('mouseleave',()=>ring.classList.remove('expand'));
+});
+
+// ── PARTICLE CANVAS
+const canvas = document.getElementById('particle-canvas');
+const ctx = canvas.getContext('2d');
+let particles = [];
+function resize(){ canvas.width=window.innerWidth; canvas.height=window.innerHeight; }
+resize();
+window.addEventListener('resize',resize);
+class Particle {
+  constructor(){ this.reset(); }
+  reset(){
+    this.x=Math.random()*canvas.width;
+    this.y=Math.random()*canvas.height;
+    this.vx=(Math.random()-0.5)*0.3;
+    this.vy=(Math.random()-0.5)*0.3;
+    this.r=Math.random()*1.5+0.5;
+    this.alpha=Math.random()*0.4+0.1;
+  }
+  update(){
+    this.x+=this.vx; this.y+=this.vy;
+    if(this.x<0||this.x>canvas.width||this.y<0||this.y>canvas.height) this.reset();
+  }
+  draw(){
+    ctx.beginPath();
+    ctx.arc(this.x,this.y,this.r,0,Math.PI*2);
+    ctx.fillStyle=`rgba(0,200,130,${this.alpha})`;
+    ctx.fill();
+  }
+}
+for(let i=0;i<80;i++) particles.push(new Particle());
+// Draw grid lines
+function drawGrid(){
+  ctx.clearRect(0,0,canvas.width,canvas.height);
+  ctx.strokeStyle='rgba(0,200,130,0.04)';
+  ctx.lineWidth=1;
+  for(let x=0;x<canvas.width;x+=60){
+    ctx.beginPath(); ctx.moveTo(x,0); ctx.lineTo(x,canvas.height); ctx.stroke();
+  }
+  for(let y=0;y<canvas.height;y+=60){
+    ctx.beginPath(); ctx.moveTo(0,y); ctx.lineTo(canvas.width,y); ctx.stroke();
+  }
+  // Connect nearby particles
+  for(let i=0;i<particles.length;i++){
+    for(let j=i+1;j<particles.length;j++){
+      const dx=particles[i].x-particles[j].x;
+      const dy=particles[i].y-particles[j].y;
+      const dist=Math.sqrt(dx*dx+dy*dy);
+      if(dist<120){
+        ctx.beginPath();
+        ctx.moveTo(particles[i].x,particles[i].y);
+        ctx.lineTo(particles[j].x,particles[j].y);
+        ctx.strokeStyle=`rgba(0,200,130,${0.06*(1-dist/120)})`;
+        ctx.stroke();
+      }
+    }
+    particles[i].update();
+    particles[i].draw();
+  }
+  requestAnimationFrame(drawGrid);
+}
+drawGrid();
+
+// ── NAV SCROLL
+window.addEventListener('scroll',()=>{
+  document.getElementById('mainNav').classList.toggle('scrolled',window.scrollY>60);
+});
+
+// ── TYPEWRITER HERO
+const words=['restaurants','retail stores','franchise brands','healthcare teams','corporate ops','any business'];
+const subs=[
+  'Custom AI-powered training and workflow platforms for restaurants — your team, your brand, your floor.',
+  'Product knowledge, onboarding, and customer service platforms built for retail teams at scale.',
+  'Consistent training and operations deployed identically across every location in your franchise network.',
+  'Compliance training, staff onboarding, and workflow tools for healthcare teams that need reliability.',
+  'Workflow automation and AI-powered operations tools for corporate teams of any size.',
+  'If you have a team to train and a business to run — Floorline AI builds the system that makes both work better.'
+];
+let wi=0,ci=0,deleting=false;
+const target=document.getElementById('typeTarget');
+const subEl=document.getElementById('hero-sub-text');
+function typeLoop(){
+  const word=words[wi];
+  if(!deleting){
+    target.textContent=word.substring(0,ci+1);
+    ci++;
+    if(ci===word.length){ setTimeout(()=>{deleting=true;typeLoop();},2200); return; }
+    setTimeout(typeLoop,80);
+  } else {
+    target.textContent=word.substring(0,ci-1);
+    ci--;
+    if(ci===0){
+      deleting=false;
+      wi=(wi+1)%words.length;
+      subEl.style.opacity='0';
+      setTimeout(()=>{ subEl.textContent=subs[wi]; subEl.style.opacity='1'; },300);
+      setTimeout(typeLoop,300);
+      return;
+    }
+    setTimeout(typeLoop,40);
+  }
+}
+subEl.style.transition='opacity 0.3s';
+setTimeout(typeLoop,1800);
+
+// ── INDUSTRY SWITCHER (hero buttons)
+document.querySelectorAll('.ind-btn').forEach(btn=>{
+  btn.addEventListener('click',()=>{
+    document.querySelectorAll('.ind-btn').forEach(b=>b.classList.remove('active'));
+    btn.classList.add('active');
+  });
+});
+
+// ── COUNT UP
+function countUp(el){
+  const target=+el.dataset.target;
+  if(target===0){ el.textContent='0'; return; }
+  let current=0;
+  const inc=Math.ceil(target/60);
+  const timer=setInterval(()=>{
+    current=Math.min(current+inc,target);
+    el.textContent=current+(target===100?'%':target===0?'':'+');
+    if(current>=target){ el.textContent=target+(target===100?'%':target>10?'+':''); clearInterval(timer); }
+  },20);
+}
+
+// ── SCROLL REVEAL + COUNTER TRIGGER
+const observer=new IntersectionObserver((entries)=>{
+  entries.forEach(entry=>{
+    if(entry.isIntersecting){
+      entry.target.classList.add('visible');
+      if(entry.target.classList.contains('count-up')) countUp(entry.target);
+    }
+  });
+},{threshold:0.15});
+document.querySelectorAll('.fade-in,.count-up').forEach(el=>observer.observe(el));
+
+// ── INDUSTRY TABS
+const industryData={
+  restaurants:{title:'Restaurants & Hospitality',desc1:'Training platforms, product knowledge guides, shift briefing tools, allergen platforms, and manager portals built specifically for food and beverage operations.',desc2:'From new hire onboarding to menu knowledge and objection handling — we build the complete training ecosystem your team uses on the floor.',features:['Staff trainer apps with product & menu knowledge','Manager portals with shift briefings & HR tools','Guest-facing allergen and menu guides','Offline-ready for any location','Scalable across single or multi-location brands'],stats:[{v:'25+',l:'Restaurants served'},{v:'3',l:'Platform modules'},{v:'0',l:'IT setup needed'},{v:'∞',l:'Scalability'}]},
+  retail:{title:'Retail',desc1:'Product knowledge, onboarding, and customer service training platforms built for retail teams at any scale — from a single storefront to a national chain.',desc2:'Consistent, brand-aligned training that every associate can access on any device, with or without internet.',features:['Product knowledge and upsell training','Customer service scripts and objection handling','New hire onboarding workflows','Seasonal promotion briefings','Loss prevention and compliance tools'],stats:[{v:'Fast',l:'Deploy time'},{v:'100%',l:'Offline capable'},{v:'Any',l:'Device ready'},{v:'$0',l:'Monthly fees'}]},
+  franchise:{title:'Franchise Brands',desc1:'Scalable training and operations platforms deployed identically across every location in your franchise network — consistent standards, every time.',desc2:'Build it once. Deploy everywhere. Every franchisee gets the same quality training and operations experience.',features:['Brand-consistent training across all locations','Location-specific manager portals','Centralized SOP delivery','Thumb drive or email deployment','No IT infrastructure required'],stats:[{v:'1',l:'Build, deploy anywhere'},{v:'25+',l:'Proven at scale'},{v:'100%',l:'Brand consistent'},{v:'0',l:'IT overhead'}]},
+  healthcare:{title:'Healthcare',desc1:'Compliance training, staff onboarding, and workflow tools for healthcare teams that need reliability, accuracy, and accessibility above everything.',desc2:'HIPAA-aware, offline-ready platforms that work in any clinical environment — no internet dependency, no login friction.',features:['Compliance and HIPAA awareness training','New hire onboarding and orientation','Shift briefing and handoff tools','Protocol and procedure guides','Incident reporting workflows'],stats:[{v:'100%',l:'Offline capable'},{v:'Fast',l:'Onboarding speed'},{v:'0',l:'Login required'},{v:'Any',l:'Device'}]},
+  corporate:{title:'Corporate Operations',desc1:'Workflow automation, internal training platforms, and AI-powered operations tools for corporate teams of any size — from startups to enterprise.',desc2:'Replace your binders, PDFs, and email chains with a single intelligent platform your entire team can access instantly.',features:['Custom internal training platforms','Workflow automation tools','Onboarding and HR systems','SOP and policy delivery','Manager and team lead dashboards'],stats:[{v:'Fast',l:'Deploy time'},{v:'Custom',l:'Every build'},{v:'Any',l:'Team size'},{v:'0',l:'Subscriptions'}]},
+  smb:{title:'Startups & SMBs',desc1:'Professional-grade training and operations systems without enterprise price tags — built fast, deployed immediately, and priced for growing businesses.',desc2:'You move fast. Your tools should too. Floorline AI builds custom platforms that punch way above their weight class.',features:['Fast turnaround — days not months','No bloated software contracts','Grows with your business','One-time build, yours forever','Personal attention on every project'],stats:[{v:'Days',l:'Build time'},{v:'Yours',l:'Forever'},{v:'$0',l:'Monthly fees'},{v:'100%',l:'Custom'} ]}
+};
+function switchIndustry(key,btn){
+  document.querySelectorAll('.ind-tab').forEach(t=>t.classList.remove('active'));
+  btn.classList.add('active');
+  const d=industryData[key];
+  const el=document.getElementById('industryContent');
+  el.style.opacity='0';
+  setTimeout(()=>{
+    el.innerHTML=`
+      <div>
+        <h3>${d.title}</h3>
+        <p>${d.desc1}</p><p>${d.desc2}</p>
+        <div class="industry-features">${d.features.map(f=>`<div class="ind-feature">${f}</div>`).join('')}</div>
+      </div>
+      <div class="industry-visual">
+        <div class="ind-stat-grid">${d.stats.map(s=>`<div class="ind-stat"><div class="ind-stat-val">${s.v}</div><div class="ind-stat-label">${s.l}</div></div>`).join('')}</div>
+      </div>`;
+    el.style.opacity='1';
+    el.style.transition='opacity 0.4s';
+  },200);
+}
+
+// ── LIVE AI DEMO
+async function sendDemoMessage(){
+  const input=document.getElementById('demoInput');
+  const msg=input.value.trim();
+  if(!msg) return;
+  const btn=document.getElementById('demoSend');
+  btn.disabled=true;
+  input.value='';
+  addMessage(msg,'user');
+  showTyping();
+  try{
+    const res=await fetch('https://api.anthropic.com/v1/messages',{
+      method:'POST',
+      headers:{'Content-Type':'application/json'},
+      body:JSON.stringify({
+        model:'claude-sonnet-4-20250514',
+        max_tokens:1000,
+        system:`You are the Floorline AI Training Assistant — a demo embedded on the Floorline AI website. Floorline AI builds custom AI-powered training and workflow platforms for restaurants, retail, hospitality, franchises, and any people-driven business.
+
+Answer questions about staff training, restaurant operations, onboarding, workflow, shift management, allergens, SOPs, manager tools, and anything related to running a team or a business. Be helpful, concise, and practical. Keep responses under 200 words. At the end of each response, add a subtle one-line hint that a custom version of this AI, trained on their specific business, brand, and menu, is what Floorline AI builds.`,
+        messages:[{role:'user',content:msg}]
+      })
+    });
+    const data=await res.json();
+    removeTyping();
+    const text=data.content?.[0]?.text||'Something went wrong. Please try again.';
+    addMessage(text,'ai');
+  } catch(e){
+    removeTyping();
+    addMessage('Demo is temporarily unavailable — but this is exactly what Floorline AI builds for your team. Reach out to see a full live build.','ai');
+  }
+  btn.disabled=false;
+}
+function addMessage(text,role){
+  const msgs=document.getElementById('demoMessages');
+  const div=document.createElement('div');
+  div.className=`msg msg-${role}`;
+  div.innerHTML=role==='ai'?`<strong>Floorline AI</strong><br>${text}`:text;
+  msgs.appendChild(div);
+  msgs.scrollTop=msgs.scrollHeight;
+}
+function showTyping(){
+  const msgs=document.getElementById('demoMessages');
+  const div=document.createElement('div');
+  div.className='msg msg-ai';
+  div.id='typingIndicator';
+  div.innerHTML='<div class="typing-indicator"><div class="typing-dot"></div><div class="typing-dot"></div><div class="typing-dot"></div></div>';
+  msgs.appendChild(div);
+  msgs.scrollTop=msgs.scrollHeight;
+}
+function removeTyping(){
+  const el=document.getElementById('typingIndicator');
+  if(el) el.remove();
+}
+function fillDemo(text){
+  document.getElementById('demoInput').value=text;
+  document.getElementById('demoInput').focus();
+}
+document.getElementById('demoInput').addEventListener('keydown',e=>{
+  if(e.key==='Enter') sendDemoMessage();
+});
+
+// ── CONTACT FORM (Netlify Forms — submissions captured & emailed)
+function handleNetlifySubmit(form){
+  const data = new FormData(form);
+  fetch('/', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+    body: new URLSearchParams(data).toString()
+  })
+  .then(() => {
+    document.getElementById('cf-success').style.display = 'block';
+    form.reset();
+  })
+  .catch((error) => {
+    // Fallback: open email client with the data if Netlify submit fails
+    const name = data.get('name')||'';
+    const email = data.get('email')||'';
+    const phone = data.get('phone')||'';
+    const type = data.get('business-type')||'';
+    const msg = data.get('message')||'';
+    const subject = encodeURIComponent(`New Project Inquiry from ${name}`);
+    const body = encodeURIComponent(`Name: ${name}\nPhone: ${phone}\nEmail: ${email}\nBusiness Type: ${type}\n\nMessage:\n${msg}`);
+    window.location.href = `mailto:Floorlineai@gmail.com?subject=${subject}&body=${body}`;
+  });
+  return false; // prevent default page navigation
+}
+</script>
+</body>
+</html>
