@@ -1,8 +1,6 @@
-# AI Visibility Audit — served from the floorline-aeo-audit Netlify site
-# under floorlineai.com/audit (200 = proxy/rewrite, the URL bar stays on floorlineai.com).
-/audit                  https://floorline-aeo-audit.netlify.app/                   200
-/audit/*                https://floorline-aeo-audit.netlify.app/:splat             200
-/api/aeo-audit          https://floorline-aeo-audit.netlify.app/api/aeo-audit          200
-/api/aeo-report         https://floorline-aeo-audit.netlify.app/api/aeo-report         200
-/api/aeo-lead           https://floorline-aeo-audit.netlify.app/api/aeo-lead           200
-/api/aeo-citation-test  https://floorline-aeo-audit.netlify.app/api/aeo-citation-test  200
+# AI Visibility Audit — page served from the floorline-aeo-audit Netlify site
+# under www.floorlineai.com/audit (200 = proxy/rewrite, the URL bar stays here).
+# The /api/aeo-* calls are handled by netlify/edge-functions/audit-api.js, not
+# here: a proxy between two Netlify sites doesn't run the other site's edge functions.
+/audit                  https://floorline-aeo-audit.netlify.app/          200
+/audit/*                https://floorline-aeo-audit.netlify.app/:splat    200
